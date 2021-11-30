@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from "react";
 import Slider from "react-slick";
 
@@ -7,27 +8,60 @@ export default function SimpleSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    focusOnSelect: true
   };
   return (
     <Slider {...settings}>
       <div>
-        <h3>1</h3>
+        <Image
+
+          src='/../public/images/1.png'
+          height={108}
+          width={108}
+        />
       </div>
       <div>
-        <h3>2</h3>
+      <Image
+
+          src='/../public/images/2.png'
+          height={108}
+          width={108}
+        />
       </div>
       <div>
-        <h3>3</h3>
+      <Image
+
+          src='/../public/images/3.png'
+          height={108}
+          width={108}
+        />
       </div>
       <div>
-        <h3>4</h3>
+      <Image
+
+          src='/../public/images/4.png'
+          height={108}
+          width={108}
+        />
       </div>
       <div>
-        <h3>5</h3>
+      <Image
+
+          src='/../public/images/5.png'
+          height={108}
+          width={108}
+        />
       </div>
       <div>
-        <h3>6</h3>
+        <Image
+  
+            src='/../public/images/6.png'
+            height={108}
+            width={108}
+        />
       </div>
     </Slider>
   );
