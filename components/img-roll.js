@@ -2,16 +2,17 @@ import Image from 'next/image'
 import React from "react";
 import Slider from "react-slick";
 
-export default function SimpleSlider() {
+export default function VerticalMode () {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
-    focusOnSelect: true
+    autoplaySpeed: 0,
+    focusOnSelect: true,
+    cssEase: "linear"
   };
   return (
     <Slider {...settings}>
