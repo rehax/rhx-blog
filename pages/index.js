@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import SimpleSlider from '../components/img-roll.js'
+import Gallery from '../components/aliceCarousel.js'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
         <SimpleSlider> </SimpleSlider>
+        <Gallery></Gallery>
       </section>
     </Layout>
   )
